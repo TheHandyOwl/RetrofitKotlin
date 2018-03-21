@@ -1,8 +1,8 @@
-package com.journaldev.retrofitintro
+package com.journaldev.retrofitintro.api.apiexample
 
-import com.journaldev.retrofitintro.pojo.MultipleResource
-import com.journaldev.retrofitintro.pojo.User
-import com.journaldev.retrofitintro.pojo.UserList
+import com.journaldev.retrofitintro.pojo.pojoexample.MultipleResource
+import com.journaldev.retrofitintro.pojo.pojoexample.User
+import com.journaldev.retrofitintro.pojo.pojoexample.UserList
 
 import retrofit2.Call
 import retrofit2.http.Body
@@ -27,4 +27,5 @@ internal interface APIInterface {
     @FormUrlEncoded
     @POST("/api/users?")
     fun doCreateUserWithField(@Field("name") name: String, @Field("job") job: String): Call<UserList>
+
 }

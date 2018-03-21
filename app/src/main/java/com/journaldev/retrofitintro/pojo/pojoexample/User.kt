@@ -1,4 +1,4 @@
-package com.journaldev.retrofitintro.pojo
+package com.journaldev.retrofitintro.pojo.pojoexample
 
 import com.google.gson.annotations.SerializedName
 

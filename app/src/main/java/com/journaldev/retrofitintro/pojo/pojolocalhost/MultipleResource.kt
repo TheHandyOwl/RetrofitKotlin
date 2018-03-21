@@ -1,11 +1,11 @@
-package com.journaldev.retrofitintro.pojo
+package com.journaldev.retrofitintro.pojo.pojolocalhost
 
 import com.google.gson.annotations.SerializedName
 
 import java.util.ArrayList
 
 
-class UserList {
+class MultipleResource {
 
     @SerializedName("page")
     var page: Int? = null
@@ -19,14 +19,15 @@ class UserList {
     var data: List<Datum> = ArrayList()
 
     inner class Datum {
+
         @SerializedName("id")
         var id: Int? = null
-        @SerializedName("first_name")
-        var first_name: String? = null
-        @SerializedName("last_name")
-        var last_name: String? = null
-        @SerializedName("avatar")
-        var avatar: String? = null
-    }
+        @SerializedName("name")
+        var name: String? = null
+        @SerializedName("year")
+        var year: Int? = null
+        @SerializedName("pantone_value")
+        var pantoneValue: String? = null
 
+    }
 }

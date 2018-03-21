@@ -6,13 +6,13 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import com.journaldev.retrofitintro.APIClient
-import com.journaldev.retrofitintro.APIInterface
+import com.journaldev.retrofitintro.api.apiexample.APIClient
+import com.journaldev.retrofitintro.api.apiexample.APIInterface
 import com.journaldev.retrofitintro.R
 
-import com.journaldev.retrofitintro.pojo.MultipleResource
-import com.journaldev.retrofitintro.pojo.User
-import com.journaldev.retrofitintro.pojo.UserList
+import com.journaldev.retrofitintro.pojo.pojoexample.MultipleResource
+import com.journaldev.retrofitintro.pojo.pojoexample.User
+import com.journaldev.retrofitintro.pojo.pojoexample.UserList
 
 import retrofit2.Call
 import retrofit2.Callback

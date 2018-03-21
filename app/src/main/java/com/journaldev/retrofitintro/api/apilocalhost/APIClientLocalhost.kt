@@ -1,6 +1,5 @@
-package com.journaldev.retrofitintro
+package com.journaldev.retrofitintro.api.apilocalhost
 
-import com.journaldev.retrofitintro.pojo.MultipleResource
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -8,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-internal object APIClient {
+internal object APIClientLocalhost {
 
     private var retrofit: Retrofit? = null
 
@@ -21,7 +20,7 @@ internal object APIClient {
 
 
             retrofit = Retrofit.Builder()
-                    .baseUrl("https://reqres.in")
+                    .baseUrl("http://localhost:3000")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build()
