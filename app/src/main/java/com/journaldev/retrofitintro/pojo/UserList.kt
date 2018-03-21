@@ -19,7 +19,6 @@ class UserList {
     var data: List<Datum> = ArrayList()
 
     inner class Datum {
-
         @SerializedName("id")
         var id: Int? = null
         @SerializedName("first_name")
@@ -28,6 +27,6 @@ class UserList {
         var last_name: String? = null
         @SerializedName("avatar")
         var avatar: String? = null
-
     }
+
 }

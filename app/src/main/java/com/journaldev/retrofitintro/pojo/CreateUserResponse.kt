@@ -13,4 +13,5 @@ class CreateUserResponse {
     var id: String? = null
     @SerializedName("createdAt")
     var createdAt: String? = null
+
 }
